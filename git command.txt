@@ -1,0 +1,75 @@
+cd /d/javascript/
+git config --list
+git config --global user.name "Ferhan"
+git config --global user.email "ferhangeneral@gmail.com"
+git config --list
+git touch .gitignore (içerisine takip edilmesini istemediğimiz dosyaları yazıyoruz. // log.txt directory/ *.txt)
+git init
+git status
+git add .
+git status
+git commit -m 'Baslangic Dosyalari Gonderildi'
+git status
+clear
+cd ..
+git status -s
+ls -al
+mv text.txt readme.txt 'Ad Değiştir'
+git status
+git add .
+git restore --staged index.html //branch'tan geri alma
+git restore index.html //dosya üzerindeki değişiklikleri geri alma
+git show
+git log
+git log --oneline
+git log -p -2
+git log --since=30minutes //3days 5hours 2weeks
+git checkout a2c7254 // Önceki Değişikliklere dön
+git checkout master // rekrar en sona git
+git revert a2c7254 // tek bir kommit geri alınır
+git reset --soft id (tüm çalışmaları staged alana gönderdi)/ --mixed id (çalışma alanına gönderdi) / --hard id (proyi başlangıç haline döndürür)
+git rm -r --cached . //tüm elemanlar git'ten çıkarılır
+git branch cssbranch
+git branch htmlbranch
+git branch -a
+git merge cssbranch htmlbranch
+
+Temel Git Komutları:
+git add
+git status
+git log
+git show
+git diff
+git rm
+git mv
+git checkout
+git revert
+git reset (hard, soft, mixed)
+git restore
+git reflog
+git branch
+git merge
+git commit -am 'Mesaj'
+
+Komut Satırı:
+touch
+rm - mv
+cd - dir
+ls -al
+
+echo "# starter" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ferhanaydin/starter.git
+git push -u origin master
+git push origin master --force
+git push
+
+git clone https://github.com/ferhanaydin/starter.git
+git remote -v
+git fetch // Uzak bağlantıdaki değişikliği kopyalıyor.
+git merge // 
+git pull = git fetch + git merge
+git pull // uzaktaki dosyaları getir
+git push // uzağa dosya gönder
